@@ -2,9 +2,10 @@ import sys
 from pyrogram import Client, errors
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import BotCommand
+from flask import Flask
+import threading
 
 from Bikash import config
-
 from ..logging import LOGGER
 
 
@@ -65,3 +66,17 @@ class BikashBot(Client):
         else:
             self.name = get_me.first_name
         LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+
+# Flask Server Code for Health Check
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Bot is running"
+
+def run():
+    app.run(host="0.0.0.0", port=8000)
+
+# Start Flask server in a new thread
+t = threading.Thread(target=run)
+t.start()
