@@ -17,14 +17,14 @@ COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "༺ 𝐁𝐠𝐭 𝐌𝐮𝐬𝐢𝐜 𝐁𝐨𝐭 ༻")
-OWNER_ID = list(map(int, getenv("OWNER_ID", "1439222689").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "6508598835").split()))
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/BikashHalderNew/Bgtplayer")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "bikash")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BikashGadgetsTech")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/Bgt_Chat")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/botlogpy")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/botlogpy")
 SUPPORT_HEHE = SUPPORT_GROUP.split("me/")[1]
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "180"))
 QUEUE_LIMIT = int(getenv("QUEUE_LIMIT", "150"))
@@ -57,7 +57,7 @@ STRING5 = getenv("STRING_SESSION5", None)
 
 ############################
 COMMAND_PREFIXES.append('')
-OWNER_ID.append(1439222689)
+OWNER_ID.append(6174868004)
 ############################
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
