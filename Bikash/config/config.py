@@ -11,7 +11,7 @@ if os.path.exists("Internal"):
 
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
-BOT_ID = int(getenv("BOT_ID", "7198638721"))
+BOT_ID = int(getenv("BOT_ID", "7478730845"))
 BOT_TOKEN = getenv("BOT_TOKEN")
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! .").split())
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
